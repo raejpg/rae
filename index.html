@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gëzuar Ditëlindjen, Endri!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffe259, #ffa751);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .card {
+            text-align: center;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #555;
+        }
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background: radial-gradient(circle, #fff, #f06);
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+        .balloon:nth-child(even) {
+            animation-delay: 2s;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <div class="card">
+        <h1>Gëzuar Ditëlindjen e vonuar, Endri! ??</h1>
+        <p>Uroj që ajo ditë të ketë qenë plot gëzim dhe lumturi!</p>
+    </div>
+</body>
+</html>
